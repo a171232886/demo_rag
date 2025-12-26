@@ -1,0 +1,59 @@
+server:
+  host: 0.0.0.0
+  port: 8080
+
+  
+user:
+  admin_token:
+    username: admin
+    role: admin
+  ordinary_token:
+    username: user
+    role: user
+
+
+rag:
+
+  embedding_model:
+    model_name: text-embedding-v4
+    api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key: <YOUR_API_KEY>
+
+
+  generation_model:
+    model_name: qwen3-next-80b-a3b-instruct
+    api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key: <YOUR_API_KEY>
+    other_parameters:
+      is_chat_model: true
+
+
+  storage:
+    # AWS S3 
+    file_store:
+      endpoint_url: http://localhost:9000
+      access_key: minioadmin
+      secret_key: minioadmin
+      bucket: rag
+
+    # MongoDB
+    doc_store:
+      user: admin
+      password: admin123
+      host: localhost
+      port: 27017
+      database: rag
+
+    # MongoDB
+    index_store:
+      user: admin
+      password: admin123
+      host: localhost
+      port: 27017
+      database: rag
+
+    # Qdrant
+    vector_store:
+      host: localhost
+      port: 6333
+      collection_name: rag

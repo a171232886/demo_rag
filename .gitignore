@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+venv/
+.venv/
+*.egg-info/
+
+
+# uv (uv tool)
+.uv/
+.uv_cache/
+.uv-virtualenv/
+uv.lock
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Test
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Others
+*.sqlite3
+*.db
