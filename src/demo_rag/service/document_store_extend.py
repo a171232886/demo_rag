@@ -19,7 +19,7 @@ class MongoDocumentStoreExtend(MongoDocumentStore):
         return target_docs
     
     
-    def set_document_status(self, doc_id: str, status: dict) -> None:
+    def set_document_status(self, doc_id: str, status: str) -> None:
         ref_doc_info = self.get_ref_doc_info(doc_id)
         if ref_doc_info is None:
             raise ValueError(f"Document with id {doc_id} not found.")
