@@ -17,13 +17,13 @@ rag:
   embedding_model:
     model_name: text-embedding-v4
     api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
-    api_key: <YOUR_API_KEY>
+    api_key: <Your API Key Here>
 
 
   generation_model:
     model_name: qwen3-next-80b-a3b-instruct
     api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
-    api_key: <YOUR_API_KEY>
+    api_key: <Your API Key Here>
     other_parameters:
       is_chat_model: true
 

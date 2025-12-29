@@ -15,7 +15,6 @@ services:
   mongodb:
     image: mongo:latest
     container_name: mongodb-local
-    restart: always
     ports:
       - "27017:27017"
     environment:

@@ -1,11 +1,20 @@
 [project]
 name = "demo-rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "A demo project for RAG using FastAPI and LlamaIndex"
 readme = "README.md"
 requires-python = ">=3.13"
-authors = [
-    { name = "WH", email = "wh@wh.com" }
+authors = [{ name = "WH" }]
+license = { text = "MIT" }
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 
 dependencies = [
@@ -27,3 +36,9 @@ dependencies = [
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/a171232886/demo_rag"
+"Bug Reports" = "https://github.com/a171232886/demo_rag/issues"
+"Source" = "https://github.com/a171232886/demo_rag"
+"视频教程" = "https://www.bilibili.com/video/BV1u7BvBGEfX"
