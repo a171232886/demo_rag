@@ -3,6 +3,12 @@
 This is a demo project for Retrieval-Augmented Generation (RAG) service based on LlamaIndex and FastAPI.
 It includes an example of how to set up and use the RAG service with a MinIO storage backend, MongoDB for metadata storage, and Qdrant for vector storage.
 
+- PyPi: https://pypi.org/project/demo-rag/
+  
+  So, you can `pip install demo-rag`
+  
+- BiliBili: https://www.bilibili.com/video/BV1CJB6BLE8V
+
 ## Prerequisites
 - Docker and Docker Compose installed on your machine.
 - Python 3.13 or higher installed.
